@@ -200,7 +200,7 @@ function ChatRoomPage() {
   }
 
   const handlePictureChange = (e) => {
-    setIsMediaSending(true) // Set sending status to true
+    setIsMediaSending(true)
 
     const file = e.target.files[0]
     if (file && allowedPictureTypes.includes(file.type)) {
