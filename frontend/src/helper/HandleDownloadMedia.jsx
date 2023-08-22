@@ -12,7 +12,7 @@ function saveMediaToDevice(blob, data) {
     document.body.removeChild(link)
 }
 
-export default async function handleDownloadMedia(data) {
+export async function handleDownloadMedia(data) {
     try {
         const response = await axios.get(
             `${SERVER_DOMAIN}/.download/${data.UNIQUE_NAME}`,

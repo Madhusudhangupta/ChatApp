@@ -1,0 +1,88 @@
+.chat__topbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1.5rem 0rem;
+    border-bottom: 1px solid var(--COLOR_DARK);
+    margin: 0rem 2rem;
+  }
+  
+  .topbar__btns {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  
+  .topbar__icons {
+    cursor: pointer;
+    color: var(--COLOR_GREY);
+    font-size: 1.5rem;
+  }
+  
+  .topbar__attachment__menu {
+    position: relative;
+  }
+  
+  .topbar__float__menu {
+    position: absolute;
+    background-color: var(--COLOR_DARK);
+    z-index: 10;
+    right: 0;
+    top: 2.5rem;
+    border-radius: 5px;
+  }
+  
+  .topbar__float__menu > p {
+    padding: 0.6rem 2rem;
+    border-radius: 5px;
+  }
+  
+  .voice__call,
+  .video__call {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    cursor: pointer;
+  }
+  
+  .call__icon {
+    color: var(--COLOR_GREY);
+    font-size: 1.25rem;
+  }
+  
+  .voice__call:focus,
+  .video__call:focus,
+  .voice__call:hover,
+  .video__call:hover,
+  .voice__call:hover .call__icon,
+  .video__call:hover .call__icon {
+    background-color: var(--COLOR_GREY);
+    color: var(--COLOR_DARK);
+  }
+  
+  /* Media Query Breakpoints */
+  
+  @media (max-width: 700px) {
+    .chat__topbar {
+      padding: 1.2rem 0rem;
+      margin: 0rem 1.25rem;
+    }
+  
+    .topbar__float__menu {
+      top: 2rem;
+    }
+  
+    .topbar__float__menu > p {
+      padding: 0.5rem 1.5rem;
+      font-size: 0.95rem;
+    }
+  
+    .voice__call,
+    .video__call {
+      gap: 0.5rem;
+    }
+  }

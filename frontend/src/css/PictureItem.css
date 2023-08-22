@@ -1,0 +1,37 @@
+.picture__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+  
+  .other .picture__content {
+    flex-direction: row-reverse;
+  }
+  
+  .picture {
+    max-width: 20rem;
+  }
+  
+  .picture > img {
+    border-radius: 1rem;
+  }
+  
+  /* Media Query Breakpoints */
+  
+  @media (max-width: 700px) {
+    .picture__content {
+      gap: 0.5rem;
+    }
+  
+    .picture {
+      max-width: 15rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .picture {
+      max-width: 12rem;
+    }
+  }

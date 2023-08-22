@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom"
 import { Toaster } from 'react-hot-toast'
-
+import Footer from '../components/Footer'
+import '../css/IndexPage.css'
 
 function IndexPage() {
     const navigate = useNavigate()
@@ -40,7 +41,7 @@ function IndexPage() {
         </div>
 
         <div>
-            {/* <Footer /> */}
+            <Footer />
         </div>
     </div>
   )

@@ -5,11 +5,11 @@ export function onConnectEvent(socket, setIsConnected) {
     setIsConnected(true)
 }
 
-export function onDisConnectEvent(socket, setIsConnected) {
+export function onDisconnectEvent(socket, setIsConnected) {
     setIsConnected(false)
 }
 
-export function onJoinRoomEvents(IS_NEW_ROOM, USER_NAME, USER_ID, ROOM_CODE) {
+export function onJoinRoomEvent(IS_NEW_ROOM, USER_NAME, USER_ID, ROOM_CODE) {
     return {
         IS_NEW_ROOM: IS_NEW_ROOM,
         USER_NAME: USER_NAME,

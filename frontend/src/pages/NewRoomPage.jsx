@@ -3,6 +3,7 @@ import { useFormik } from 'formik'
 import { validateNewRoom } from '../helper/ValidateForm'
 import { nanoid } from 'nanoid'
 import { Toaster, toast } from 'react-hot-toast'
+import '../css/NewRoomPage.css'
 
 function NewRoomPage() {
   const navigate = useNavigate()

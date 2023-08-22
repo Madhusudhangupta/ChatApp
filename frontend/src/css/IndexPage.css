@@ -1,0 +1,176 @@
+.index__page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .index__contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    gap: 5rem;
+    margin: 5rem 0rem 5rem 2rem;
+  }
+  
+  .index__banner__text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .index__banner__text > h1 {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    color: var(--COLOR_PRIMARY);
+  }
+  
+  .index__banner__text > h3 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-weight: 300;
+  }
+  
+  .index__btns {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  
+  .index__btns > button {
+    padding: 0.75rem 1rem;
+    margin: 2rem 0rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
+    letter-spacing: 2px;
+  }
+  
+  .btn__new__chat {
+    background-color: var(--COLOR_PRIMARY);
+    color: var(--COLOR_DARK);
+  }
+  
+  .btn__new__chat:focus,
+  .btn__new__chat:hover {
+    background-color: var(--COLOR_GREY);
+    color: var(--COLOR_BLACK);
+  }
+  
+  .btn__old__chat {
+    background-color: var(--COLOR_LIGHT);
+    color: var(--COLOR_DARK);
+  }
+  
+  .btn__old__chat:focus,
+  .btn__old__chat:hover {
+    background-color: var(--COLOR_GREY);
+    color: var(--COLOR_BLACK);
+  }
+  
+  .index__banner__img > img {
+    width: 60%;
+    animation: bounce 2s infinite ease-in-out;
+    vertical-align: middle;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(50px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Media Query Breakpoints */
+  
+  @media (max-width: 885px) {
+    .index__contents {
+      gap: 4rem;
+      margin: 3rem 0rem 3rem 2rem;
+    }
+  
+    .index__banner__text > h1 {
+      font-size: 2.8rem;
+    }
+  }
+  
+  @media (max-width: 856px) {
+    .index__contents {
+      gap: 2rem;
+      margin: 2rem 0rem 2rem 2rem;
+    }
+  
+    .index__banner__text > h1 {
+      font-size: 2.6rem;
+    }
+  
+    .index__banner__text > h3 {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 755px) {
+    .index__banner__text > h1 {
+      font-size: 2.2rem;
+    }
+  
+    .index__banner__text > h3 {
+      font-size: 0.8rem;
+    }
+  
+    .index__btns {
+      gap: 1rem;
+    }
+  
+    .index__btns > button {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 560px) {
+    .index__contents {
+      margin: 5rem 2rem 1rem;
+    }
+  
+    .index__banner__text {
+      align-items: normal;
+    }
+  
+    .index__btns {
+      gap: 1rem;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .index__btns > button {
+      padding: 0.6rem 0.8rem;
+    }
+  
+    .index__banner__img {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 323px) {
+    .index__contents {
+      margin: 3rem 2rem 3rem;
+    }
+  
+    .index__btns > button {
+      letter-spacing: 1px;
+    }
+  }

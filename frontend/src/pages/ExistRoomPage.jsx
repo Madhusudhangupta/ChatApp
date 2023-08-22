@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import { validateExistRoom } from '../helper/ValidateForm'
 import { Toaster, toast } from 'react-hot-toast'
 import { nanoid } from 'nanoid'
+import '../css/ExistRoomPage.css'
 
 function ExistRoomPage() {
   const navigate = useNavigate()

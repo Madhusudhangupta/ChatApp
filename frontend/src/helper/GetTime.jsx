@@ -1,4 +1,4 @@
-export default function getTime(date) {
+export function getTime(date) {
     let hours = date.getHours()
     let minutes = date.getMinutes()
     const ampm = hours >= 12 ? "PM" : "AM"

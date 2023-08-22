@@ -1,5 +1,5 @@
 
-export default function getFileSize(bytes) {
+export function getFileSize(bytes) {
     let finalSize;
     const sizeInKB = bytes/1024
     const sizeInMB = sizeInKB/1024
