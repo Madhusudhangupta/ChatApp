@@ -5,7 +5,7 @@ export const allowedFileTypes = [
     "text/xml",
     "text/plain",
     "application/pdf",
-  ];
+  ]
   
   export const allowedPictureTypes = [
     "image/jpeg",
@@ -20,13 +20,13 @@ export const allowedFileTypes = [
     "image/vnd.wap.wbmp",
     "image/heic",
     "image/heif",
-  ];
+  ]
   
-  export const allowedVideoTypes = ["video/mp4", "video/webm", "video/ogg"];
+  export const allowedVideoTypes = ["video/mp4", "video/webm", "video/ogg"]
   
   export const allowedAudioTypes = [
     "audio/mpeg",
     "audio/ogg",
     "audio/wav",
     "audio/webm",
-  ];
+  ]

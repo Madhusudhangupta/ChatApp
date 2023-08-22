@@ -1,5 +1,4 @@
 import './App.css'
-import React from 'react'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import IndexPage from './pages/IndexPage'
 import ExistRoomPage from './pages/ExistRoomPage'

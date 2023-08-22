@@ -1,6 +1,5 @@
 import { toast } from "react-hot-toast"
 
-
 export function onConnectEvent(socket, setIsConnected) {
     setIsConnected(true)
 }
@@ -48,7 +47,7 @@ export function onSendMessageEvent(
       CONTENT_NAME: CONTENT_NAME,
       CONTENT_SIZE: CONTENT_SIZE,
       TIME: TIME,
-    };
+    }
 }
 
 export function onReceiveMessageEvent(data, setMessageList) {

@@ -1,6 +1,6 @@
 
 export function getFileSize(bytes) {
-    let finalSize;
+    let finalSize
     const sizeInKB = bytes/1024
     const sizeInMB = sizeInKB/1024
 

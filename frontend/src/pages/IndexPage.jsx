@@ -1,7 +1,9 @@
 import { useNavigate } from "react-router-dom"
 import { Toaster } from 'react-hot-toast'
 import Footer from '../components/Footer'
+import Logo from '../components/Logo'
 import '../css/IndexPage.css'
+import CHAT_GIF from '../assets/chat-gif.gif'
 
 function IndexPage() {
     const navigate = useNavigate()
@@ -19,7 +21,7 @@ function IndexPage() {
         <Toaster position="top-center" reverseOrder={false}></Toaster>
 
         <div className="index__contents">
-            {/* <Logo /> */}
+            <Logo />
             <div className="index__banner_text">
                 <h1>Now chat anonymously with <br /> anyone</h1>
                 <h3>Click <strong>New Chat Room</strong> to get a room code you can send to people <br />you want to chat with</h3>
@@ -36,7 +38,7 @@ function IndexPage() {
             </div>
 
             <div className="index__banner__img">
-                <img src="" alt="Chat Banner" />
+                <img src={CHAT_GIF} alt="Chat Banner" />
             </div>
         </div>
 

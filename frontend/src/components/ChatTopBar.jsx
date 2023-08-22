@@ -28,7 +28,7 @@ function ChatTopbar(props) {
     }
 
     const handleVoiceCall = function () {
-        toast.error(`Voice call feature is comin soon. Stay tuned!`)
+        toast.error(`Voice call feature is coming soon. Stay tuned!`)
         setIsDivVisible(false)
     }
 

@@ -32,6 +32,6 @@ export async function handleDownloadMedia(data) {
 
     } catch (error) {
         toast.error(error.message)
-        console.log(`${error?.response?.data || error.message}`);
+        console.log(`${error?.response?.data || error.message}`)
     }
 }
