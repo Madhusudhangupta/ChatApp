@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dosis&family=Kablammo&display=swap');
+
+:root {
+    --FF: "Dosis", sans-serif;
+
+    --ERROR_COLOR: #ed4337;
+    --COLOR_WHITE: rgb(255,255,255);
+    --COLOR_BLACK: rgb(0,0,0);
+    --COLOR_GRAY: #b1b8ac;
+    --COLOR_LIGHT: #d3d3d3;
+    --COLOR_DARK: #30312b;
+    --COLOR_PRIMARY: #a9de15;
+    --COLOR_PRIMAARY_DARK: #9ad068;
+
+    --SHADOW: 0px 5px 10px 0px rgba(0,0,0,0.6);
+
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: var(--FF);
+}
+
+body {
+    background-color: rgba(0,0,0,0.95);
+    color: var(--COLOR_GRAY);
+}
+
+.nowrap {
+    white-space: nowrap;
+}
