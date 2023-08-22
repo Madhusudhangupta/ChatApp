@@ -20,25 +20,27 @@ function IndexPage() {
     <div className="index__page">
         <Toaster position="top-center" reverseOrder={false}></Toaster>
 
-        <div className="index__contents">
+        <div>
             <Logo />
-            <div className="index__banner_text">
-                <h1>Now chat anonymously with <br /> anyone</h1>
-                <h3>Click <strong>New Chat Room</strong> to get a room code you can send to people <br />you want to chat with</h3>
+            <div className="index__contents">
+                <div className="index__banner_text">
+                    <h1>Now chat anonymously with <br /> anyone</h1>
+                    <h3>Click <strong>New Chat Room</strong> to get a room code you can send to people <br />you want to chat with</h3>
 
-                <div className="index__btns">
-                    <button className="btn__new__chat nowrap" onClick={handleNewRoom}>
-                        New Chat Room
-                    </button>
+                    <div className="index__btns">
+                        <button className="btn__new__chat nowrap" onClick={handleNewRoom}>
+                            New Chat Room
+                        </button>
 
-                    <button className="btn__old_chat nowrap" onClick={handleExistRoom}>
-                        Join Chat Room
-                    </button>
+                        <button className="btn__old__chat nowrap" onClick={handleExistRoom}>
+                            Join Chat Room
+                        </button>
+                    </div>
                 </div>
-            </div>
 
-            <div className="index__banner__img">
-                <img src={CHAT_GIF} alt="Chat Banner" />
+                <div className="index__banner__img">
+                    <img src={CHAT_GIF} alt="Chat Banner" />
+                </div>
             </div>
         </div>
 

@@ -3,6 +3,7 @@ import { useFormik } from 'formik'
 import { validateNewRoom } from '../helper/ValidateForm'
 import { nanoid } from 'nanoid'
 import { Toaster, toast } from 'react-hot-toast'
+import Logo from '../components/Logo'
 import '../css/NewRoomPage.css'
 
 function NewRoomPage() {
@@ -34,7 +35,7 @@ function NewRoomPage() {
   return (
     <div className='newroom__page'>
       <Toaster position='top-center' reverseOrder={false}></Toaster>
-      {/* <logo /> */}
+      <Logo />
 
       <div className="newroom__wrapper">
         <div className="shape"></div>
@@ -45,7 +46,7 @@ function NewRoomPage() {
             <input 
               type="text" 
               placeholder='Username'
-              id='username'
+              id='userName'
               name='userName'
               required
               autoFocus

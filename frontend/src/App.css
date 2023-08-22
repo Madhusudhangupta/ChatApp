@@ -6,11 +6,11 @@
     --ERROR_COLOR: #ed4337;
     --COLOR_WHITE: rgb(255,255,255);
     --COLOR_BLACK: rgb(0,0,0);
-    --COLOR_GRAY: #b1b8ac;
+    --COLOR_GREY: #b1b8ac;
     --COLOR_LIGHT: #d3d3d3;
     --COLOR_DARK: #30312b;
     --COLOR_PRIMARY: #a9de15;
-    --COLOR_PRIMAARY_DARK: #9ad068;
+    --COLOR_PRIMARY_DARK: #9ad068;
 
     --SHADOW: 0px 5px 10px 0px rgba(0,0,0,0.6);
 
@@ -23,7 +23,7 @@ html {
 
 body {
     background-color: rgba(0,0,0,0.95);
-    color: var(--COLOR_GRAY);
+    color: var(--COLOR_GREY);
 }
 
 .nowrap {

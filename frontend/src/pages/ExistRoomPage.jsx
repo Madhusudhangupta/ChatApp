@@ -1,9 +1,9 @@
 import { useFormik } from 'formik'
-import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { validateExistRoom } from '../helper/ValidateForm'
 import { Toaster, toast } from 'react-hot-toast'
 import { nanoid } from 'nanoid'
+import Logo from '../components/Logo'
 import '../css/ExistRoomPage.css'
 
 function ExistRoomPage() {
@@ -17,6 +17,7 @@ function ExistRoomPage() {
     onSubmit: async (values) => {
       try {
         const userId = nanoid()
+        // console.log(values.roomCode);
         navigate(`/chat/${values.roomCode}`, {
           state: {
             IS_NEW_ROOM: false,
@@ -34,7 +35,7 @@ function ExistRoomPage() {
   return (
     <div className='exroom__page'>
       <Toaster position='top-center' reverseOrder={false}></Toaster>
-      {/* <Logo /> */}
+      <Logo />
 
       <div className="exroom_wrapper">
         <div className="shape__two"></div>
@@ -56,7 +57,21 @@ function ExistRoomPage() {
           {formik.errors.userName && (
             <p className="input__error">{formik.errors.userName}</p>
           )}
-          <button className="join__room__btn" type='submit'>Join Room</button>
+
+            <input 
+              type="text" 
+              placeholder='Roomcode'
+              id='roomCode'
+              name='roomCode'
+              required
+              autoComplete='off'
+              onChange={formik.handleChange}
+              value={formik.values.roomCode}
+            />
+            {formik.errors.roomCode && (
+              <p className="input__error">{formik.errors.roomCode}</p>
+            )}
+            <button className="join__room__btn" type='submit'>Join Room</button>
           </form>
         </div>
       </div>

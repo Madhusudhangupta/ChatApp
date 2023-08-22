@@ -1,5 +1,5 @@
 
-
+// validating new room
 export async function validateNewRoom(values) {
     const errors = {}
     if(!values.userName) {
